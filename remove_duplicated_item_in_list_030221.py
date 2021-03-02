@@ -122,3 +122,7 @@ for n in lista:
     final.append(n)
 
 print("after removing duplicated list becomes " +str(final) )
+
+# format 1
+
+print("My first name is {fname} and I have just turned {age}").format(fname="Jordan", age=21)

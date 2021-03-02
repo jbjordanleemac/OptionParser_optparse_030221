@@ -3,20 +3,20 @@
 import sys
 import mymodule030221
 
-from optparse import OptionParser
-
-parser=OptionParser()
-
-parser.add_option("-f", "--file", action="store", type="string", dest="file", help="<file>")
-
-(options, args)=parser.parse_args()
-
-if options.file == None:
-  print("Please use --help for options")
-  sys.exit(1)
-else:
-  m=open("item", "ro")
-  print(m.read())  
+# from optparse import OptionParser
+# 
+# parser=OptionParser()
+# 
+# parser.add_option("-f", "--file", action="store", type="string", dest="file", help="<file>")
+# 
+# (options, args)=parser.parse_args()
+# 
+# if options.file == None:
+#   print("Please use --help for options")
+#   sys.exit(1)
+# else:
+#   m=open("item", "ro")
+#   print(m.read())  
 
 class weekend():
   time_off="Yes, Time off"
@@ -122,3 +122,20 @@ for n in lista:
     final.append(n)
 
 print("after removing duplicated list becomes " +str(final) )
+
+# format 1
+
+print("My first name is {fname} and I have just turned {age}").format(fname="Jordan", age=21)
+
+# format 2
+
+name="Jordan Lee"
+
+print("your name is %s" % name)
+
+# function return 
+
+def result(num):
+  return num * 4
+
+print(result(5))
